@@ -16,7 +16,7 @@ jobs:
     - name: Zip repository
       run: mkdir dist && zip -r dist/Koerbchen-Modpack.zip .
     - name: 📂 Upload File
-      uses: tomasbkk/action-ftp-file-upload@v1.0
+      uses: genietim/ftp-action@releases/v4
       with:
         src: Koerbchen-Modpack.zip
         dest: /Koerbchen-Modpack.zip
