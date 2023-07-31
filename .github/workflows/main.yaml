@@ -28,6 +28,7 @@ jobs:
 
   push_message:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Publish News!
         run: |
