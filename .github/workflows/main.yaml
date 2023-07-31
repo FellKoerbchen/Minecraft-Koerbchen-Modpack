@@ -27,14 +27,14 @@ jobs:
   push_message:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - name: Publish News!
+        run: |
+          DISCORD_BOT_TOKEN=${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_API_URL="https://discord.com/api/v9"
+          CHANNEL_ID="1135590247770628177"
+          MESSAGE="Wir haben soeben unser Modpack geupdated! Bitte lade die neuste Version runter: https://minecraft-assets.koerbchen.net/Koerbchen-Modpack.zip"
 
-      - name: Send Discord Message
-        uses: appleboy/discord-action@master
-        with:
-          args: |
-            -t 1135590247770628177
-            -m "Wir haben soeben unser Modpack geupdated! Bitte lade die neuste Version runter: https://minecraft-assets.koerbchen.net/Koerbchen-Modpack.zip"
-        env:
-          DISCORD_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          curl -X POST -H "Authorization: Bot ${DISCORD_BOT_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "{\"content\":\"${MESSAGE}\"}" \
+            "${DISCORD_API_URL}/channels/${CHANNEL_ID}/messages"
