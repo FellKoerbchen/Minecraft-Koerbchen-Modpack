@@ -7,19 +7,14 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-
     - name: Install zip
       run: sudo apt-get install -y zip
-
     - name: Zip repository
       run: zip -r Koerbchen-Modpack.zip .
-
     - name: FTP Upload
       uses: wvbe/ftp-upload-action@v2
       with:
@@ -29,7 +24,7 @@ jobs:
         localFile: Koerbchen-Modpack.zip
         remotePath: /
 
-   push_message:
+  push_message:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
