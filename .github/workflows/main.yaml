@@ -29,7 +29,7 @@ jobs:
           TIMESTAMP=$(date +%s)
           DISCORD_BOT_TOKEN=${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_API_URL="https://discord.com/api/v9"
-          CHANNEL_ID="1135590247770628177"
+          CHANNEL_ID="1135652969950498866"
           MESSAGE="Wir haben soeben unser Modpack geupdated! Bitte lade die neuste Version runter: https://minecraft-assets.koerbchen.net/Koerbchen-Modpack.zip?t=${TIMESTAMP}"
 
           curl -X POST -H "Authorization: Bot ${DISCORD_BOT_TOKEN}" \
