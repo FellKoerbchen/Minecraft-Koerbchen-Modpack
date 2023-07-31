@@ -54,6 +54,18 @@ mode = "fancy"
 				lightning_bolt = true
 				axolotl = true
 				witch = true
+				tropical_fish = true
+				boat = true
+				salmon = true
+				wandering_trader = true
+				horse = true
+				experience_bottle = true
+				turtle = true
+				iron_golem = true
+				villager = true
+				donkey = true
+				ender_pearl = true
+				pillager = true
 
 			[light_sources.settings.entities.lootr]
 				lootr_minecart = true
@@ -64,9 +76,13 @@ mode = "fancy"
 				acolyte = true
 				ghoul = true
 				skeleton_creeper = true
+				wraith = true
+				nightmare = true
+				revenant = true
 
 			[light_sources.settings.entities.rottencreatures]
 				undead_miner = true
+				dead_beard = true
 
 			[light_sources.settings.entities.mcwfurnitures]
 				chair_entity = true
@@ -77,10 +93,17 @@ mode = "fancy"
 
 			[light_sources.settings.entities.duckling]
 				duck = true
+				duck_egg = true
 
 			[light_sources.settings.entities.wondrouswilds]
 				firefly = true
 
 			[light_sources.settings.entities.direbats]
 				direbat = true
+
+			[light_sources.settings.entities.additionaladditions]
+				glow_stick = true
+
+			[light_sources.settings.entities.betternether]
+				chair = true
 
