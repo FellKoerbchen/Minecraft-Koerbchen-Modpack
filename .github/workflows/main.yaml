@@ -16,15 +16,9 @@ jobs:
     - name: Zip repository
       run: mkdir dist && zip -r dist/Koerbchen-Modpack.zip .
     - name: 📂 Upload File
-      uses: GenieTim/ftp-action@v4.0.1
-      with:
-        src: Koerbchen-Modpack.zip
-        dest: /Koerbchen-Modpack.zip
-        host: ${{ secrets.FTP_SERVER }}
-        user: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        localDir: "dist"
-        remoteDir: "/"
+      run: |
+        sudo apt-get install -y lftp
+        lftp -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} -e "set ftp:ssl-allow no; put -O / dist/Koerbchen-Modpack.zip; bye" ftp://${{ secrets.FTP_SERVER }}
 
   push_message:
     runs-on: ubuntu-latest
