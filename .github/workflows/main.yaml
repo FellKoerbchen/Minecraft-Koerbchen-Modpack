@@ -14,15 +14,17 @@ jobs:
     - name: Install zip
       run: sudo apt-get install -y zip
     - name: Zip repository
-      run: zip -r Koerbchen-Modpack.zip .
+      run: mkdir dist && zip -r dist/Koerbchen-Modpack.zip .
     - name: 📂 Upload File
       uses: tomasbkk/action-ftp-file-upload@v1.0
       with:
-        host:  ${{ secrets.FTP_SERVER }}
-        user: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
         src: Koerbchen-Modpack.zip
         dest: /Koerbchen-Modpack.zip
+        host: ${{ secrets.FTP_SERVER }}
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        localDir: "dist"
+        remoteDir: "/"
 
   push_message:
     runs-on: ubuntu-latest
