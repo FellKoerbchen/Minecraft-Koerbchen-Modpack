@@ -1,0 +1,46 @@
+name: Zip and Upload via FTP
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install zip
+      run: sudo apt-get install -y zip
+
+    - name: Zip repository
+      run: zip -r Koerbchen-Modpack.zip .
+
+    - name: FTP Upload
+      uses: wvbe/ftp-upload-action@v2
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        localFile: Koerbchen-Modpack.zip
+        remotePath: /
+
+   push_message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Send Discord Message
+        uses: appleboy/discord-action@master
+        with:
+          args: |
+            -t 1135590247770628177
+            -m "Wir haben soeben unser Modpack geupdated! Bitte lade die neuste Version runter: https://minecraft-assets.koerbchen.net/Koerbchen-Modpack.zip"
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
