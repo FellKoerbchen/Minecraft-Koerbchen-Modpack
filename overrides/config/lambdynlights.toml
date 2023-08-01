@@ -114,6 +114,7 @@ mode = "fancy"
 
 			[light_sources.settings.entities.create]
 				stationary_contraption = true
+				super_glue = true
 
 			[light_sources.settings.entities.musketmod]
 				bullet = true
