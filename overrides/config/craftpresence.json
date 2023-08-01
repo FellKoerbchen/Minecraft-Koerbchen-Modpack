@@ -182,7 +182,8 @@
     "dynamicIcons": {
       "Karrigallu": "https://mc-heads.net/avatar/3bfa280444754f72a4f20ab625fdbc3a",
       "default": "https://via.placeholder.com/256.png",
-      "mc.karrigallu.de": "https://api.mcsrvstat.us/icon/mc.karrigallu.de"
+      "mc.karrigallu.de": "https://api.mcsrvstat.us/icon/mc.karrigallu.de",
+      "PeechyWuff": "https://mc-heads.net/avatar/2d7564e5f04844008c66d71b9c57d7ab"
     },
     "dynamicVariables": {
       "default": "Example Text",

@@ -1,12 +1,12 @@
 {
   "version": {
-    "didShowWelcome [default: false]": false,
+    "didShowWelcome [default: false]": true,
     "check [default: true]": true
   },
   "ui": {
     "showUpdateInfo [default: true]": true,
     "preferModrinthForUpdates [default: true]": true,
-    "forceBetterXPreset [default: true]": true,
+    "forceBetterXPreset [default: true]": false,
     "suppressExperimentalDialogOnLoad [default: false]": false,
     "iAmNotTheDonorType [default: false]": false
   },

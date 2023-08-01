@@ -66,6 +66,11 @@ mode = "fancy"
 				donkey = true
 				ender_pearl = true
 				pillager = true
+				item_frame = true
+				phantom = true
+				small_fireball = true
+				rabbit = true
+				husk = true
 
 			[light_sources.settings.entities.lootr]
 				lootr_minecart = true
@@ -106,4 +111,21 @@ mode = "fancy"
 
 			[light_sources.settings.entities.betternether]
 				chair = true
+
+			[light_sources.settings.entities.create]
+				stationary_contraption = true
+
+			[light_sources.settings.entities.musketmod]
+				bullet = true
+
+			[light_sources.settings.entities.charm]
+				chair = true
+
+			[light_sources.settings.entities.gobber2]
+				gobber2_arrow = true
+
+			[light_sources.settings.entities.hexal]
+
+				[light_sources.settings.entities.hexal.wisp]
+					wandering = true
 
