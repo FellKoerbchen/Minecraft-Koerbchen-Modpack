@@ -1,5 +1,39 @@
 {
   "types": {
+    "leaves_type": {
+      "twilightforest.beanstalk": true,
+      "twilightforest.thorn": true,
+      "twilightforest.twilight_oak": true,
+      "twilightforest.canopy": true,
+      "twilightforest.mangrove": true,
+      "twilightforest.dark": true,
+      "twilightforest.rainbow_oak": true,
+      "twilightforest.time": true,
+      "twilightforest.transformation": true,
+      "twilightforest.mining": true,
+      "twilightforest.sorting": true,
+      "betterend.pythadendron": true,
+      "betterend.lacugrove": true,
+      "betterend.dragon_tree": true,
+      "betterend.tenanea": true,
+      "betterend.lucernia": true,
+      "blockus.white_oak": true,
+      "blockus.legacy": true,
+      "blossom.flowering_oak": true,
+      "charm.ebony": true,
+      "deeperdarker.echo": true,
+      "vinery.grapevine": true,
+      "vinery.cherry": true,
+      "vinery.apple": true,
+      "ecologics.coconut": true,
+      "ecologics.walnut": true,
+      "hexcasting.amethyst_edified": true,
+      "hexcasting.aventurine_edified": true,
+      "hexcasting.citrine_edified": true,
+      "wondrouswilds.yellow_birch": true,
+      "wondrouswilds.orange_birch": true,
+      "wondrouswilds.red_birch": true
+    },
     "wood_type": {
       "ecologics.flowering_azalea": true,
       "ecologics.azalea": true,
@@ -39,43 +73,12 @@
       "twilightforest.transformation": true,
       "twilightforest.mining": true,
       "twilightforest.sorting": true
-    },
-    "leaves_type": {
-      "twilightforest.beanstalk": true,
-      "twilightforest.thorn": true,
-      "twilightforest.twilight_oak": true,
-      "twilightforest.canopy": true,
-      "twilightforest.mangrove": true,
-      "twilightforest.dark": true,
-      "twilightforest.rainbow_oak": true,
-      "twilightforest.time": true,
-      "twilightforest.transformation": true,
-      "twilightforest.mining": true,
-      "twilightforest.sorting": true,
-      "betterend.pythadendron": true,
-      "betterend.lacugrove": true,
-      "betterend.dragon_tree": true,
-      "betterend.tenanea": true,
-      "betterend.lucernia": true,
-      "blockus.white_oak": true,
-      "blockus.legacy": true,
-      "blossom.flowering_oak": true,
-      "charm.ebony": true,
-      "deeperdarker.echo": true,
-      "vinery.grapevine": true,
-      "vinery.cherry": true,
-      "vinery.apple": true,
-      "ecologics.coconut": true,
-      "ecologics.walnut": true,
-      "hexcasting.amethyst_edified": true,
-      "hexcasting.aventurine_edified": true,
-      "hexcasting.citrine_edified": true,
-      "wondrouswilds.yellow_birch": true,
-      "wondrouswilds.orange_birch": true,
-      "wondrouswilds.red_birch": true
     }
   },
   "entries": {
+    "leaves_type": {
+      "mcwfences.hedge": true
+    },
     "wood_type": {
       "mcwroofs.planks_upper_steep_roof": true,
       "mcwdoors.nether_door": true,
@@ -161,9 +164,6 @@
       "mcwtrpdoors.mystic_trapdoor": true,
       "mcwdoors.modern_door": true,
       "mcwwindows.stripped_log_window": true
-    },
-    "leaves_type": {
-      "mcwfences.hedge": true
     }
   }
 }

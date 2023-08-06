@@ -71,6 +71,24 @@ mode = "fancy"
 				small_fireball = true
 				rabbit = true
 				husk = true
+				potion = true
+				pufferfish = true
+				zombified_piglin = true
+				piglin = true
+				strider = true
+				ghast = true
+				blaze = true
+				magma_cube = true
+				wither_skeleton = true
+				piglin_brute = true
+				fireball = true
+				fishing_bobber = true
+				wither_skull = true
+				painting = true
+				fox = true
+				cat = true
+				leash_knot = true
+				trident = true
 
 			[light_sources.settings.entities.lootr]
 				lootr_minecart = true
@@ -88,6 +106,8 @@ mode = "fancy"
 			[light_sources.settings.entities.rottencreatures]
 				undead_miner = true
 				dead_beard = true
+				skeleton_lackey = true
+				burned = true
 
 			[light_sources.settings.entities.mcwfurnitures]
 				chair_entity = true
@@ -111,10 +131,16 @@ mode = "fancy"
 
 			[light_sources.settings.entities.betternether]
 				chair = true
+				firefly = true
+				skull = true
+				hydrogen_jellyfish = true
+				naga = true
+				naga_projectile = true
 
 			[light_sources.settings.entities.create]
 				stationary_contraption = true
 				super_glue = true
+				contraption = true
 
 			[light_sources.settings.entities.musketmod]
 				bullet = true
@@ -129,4 +155,39 @@ mode = "fancy"
 
 				[light_sources.settings.entities.hexal.wisp]
 					wandering = true
+
+			[light_sources.settings.entities.vinery]
+				mule = true
+				wandering_winemaker = true
+
+			[light_sources.settings.entities.tumbleweed]
+				tumbleweed = true
+
+			[light_sources.settings.entities.twilightforest]
+				raven = true
+				boar = true
+				kobold = true
+				tiny_bird = true
+				squirrel = true
+				death_tome = true
+				bighorn_sheep = true
+				dwarf_rabbit = true
+				deer = true
+				winter_wolf = true
+				yeti = true
+				penguin = true
+				redcap = true
+				slime_beetle = true
+				fire_beetle = true
+				wraith = true
+				redcap_sapper = true
+				pinch_beetle = true
+				mosquito_swarm = true
+				minotaur = true
+				maze_slime = true
+				protection_box = true
+				charm_effect = true
+				slime_blob = true
+				hydra = true
+				hydra_mortar = true
 
