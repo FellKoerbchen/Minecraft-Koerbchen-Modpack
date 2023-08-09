@@ -89,6 +89,7 @@ mode = "fancy"
 				cat = true
 				leash_knot = true
 				trident = true
+				trader_llama = true
 
 			[light_sources.settings.entities.lootr]
 				lootr_minecart = true
